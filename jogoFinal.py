@@ -280,18 +280,18 @@ start = ''
 escolhaABC = ''
 escolhaMenu = ''
 escolhaPersonagem = ''
-anny = 0
-annyUm = 0
-annyDois = 0
-annyTres = 0
-bart = 0
-bartUm = 0
-bartDois = 0
-bartTres = 0
-chloe = 0
-chloeUm = 0
-chloeDois = 0
-chloeTres = 0
+anny = int()
+annyUm = int()
+annyDois = int()
+annyTres = int()
+bart = int()
+bartUm = int()
+bartDois = int()
+bartTres = int()
+chloe = int()
+chloeUm = int()
+chloeDois = int()
+chloeTres = int()
 
 
 #   INÍCIO:
