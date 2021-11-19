@@ -127,3 +127,76 @@ def annyFaseTresExecucao():
         print('Mais um caso solucionado pela melhor agente!')
         print('\nParabéns.\nVocê conseguiu libertar o refém e chegou ao fim deste mini-game.\n\n Obrigado pela participação.')
         return exit()
+
+def bartFaseUmApresentacao():
+    print('Bart é um empresário de sucesso.')
+    print('Certo dia, seu filho não estava na cama como de costume.')
+    print('Achando aquilo muito estranho, tentou contato com o filho pelo celular.')
+    print('Porém não houve êxito.')
+    print('Sendo assim, Bart procurou a delegacia de polícia imediatamente.')
+    print('Ele explicou a situação aos agentes.')
+    print('O agente registrou a ocorrência, entregou alguns panfletos de como agir em caso de desaparecimento e pediu para aguardar ali.')
+    print('Enquanto aguardava, recebeu uma ligação do sequestrador. Este lhe pedia a quantida de R$ 100 mil pelo resgate.')
+    print('Fase 1: Como Bart deverá proceder?')
+
+def bartFaseUmExecucao():
+    bartUm = input('\n\nOpção A: Pedir para os agentes agirem logo\nOpção B: Pedir para falar com o filho\nOpção C: Concordar com o sequestrador para ganhar tempo')
+    bartUm = str.upper(bartUm)
+    if bartUm == 'A':
+        print('A ação dos agente causou alarde. Seu filho foi morto pelo sequestrador.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    elif bartUm == 'B':
+        print('O sequestrador negou sua solicitação e não fez mais contato. Seu filho está desaparecido desde então.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    else:
+        print('O sequestrador pediu que Bart aguardasse mais instruções\n')
+        print('Você passou de fase! Vamos para a próxima')
+        bartUm = str('1')
+        bartUm = int(bartUm)
+        return bartUm
+    
+def bartFaseDoisApresentacao():
+    print('Após os agentes terem contactado a agente de negociações, Bart aguarda nova ligação do criminoso')
+    print('Dentro de 20 minutos o sequestrador fez contato novamente.')
+    print('Ele solicitou que o dinheiro fosse entregue a um parceiro do outro lado da cidade.')
+    print('Fase 2:\n\n O que Bart deverá fazer?')
+
+def bartFaseDoisExecucao():
+    bartDois = input('\n\nOpção A: Falar que não tem o dinheiro\nOpção B: Falar que está com o dinheiro e marcar de fazer a troca pelo filho\nOpção C: Pedir ao banco empréstimo do dinheiro e marcar de fazer a troca pelo filho')
+    bartDois = str.upper(bartDois)
+    if bartDois == 'A':
+        print('Se não tem grana como vai negociar? Seu filho está morto. \n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    elif bartDois == 'B':
+        print('O sequestrador está lhe fornecendo o endereço para entregar o dinheiro e o endereço para pegar o filho.')
+        print('Você passou de fase! Vamos para a próxima')
+        bartDois = str('2')
+        bartDois = int(bartDois)
+        return bartDois
+    else:
+        print('O sequestrador está lhe fornecendo o endereço para entregar o dinheiro e o endereço para pegar o filho.')
+        print('Você passou de fase! Vamos para a próxima')
+        bartDois = str('2')
+        bartDois = int(bartDois)
+        return bartDois
+
+def bartFaseTresApresentacao():
+    print('Após o fornecimento dos endereços, uma equipe de polícia disfarçada acompanhou Bart até o endereço do pagamento do resgate.')
+    print('Enquanto isso, a agente de negociações Anny e a esposa de Bart seguiram para o endereço de entrega do refém, que era dentro do Adventure\s Park')
+    print('Enquanto Anny trabalhava, Bart teria que agir conforme combinado para trazer seu filho para casa a salvo')
+    print('Fase 3: A saída que Bart tem é concordar com o pagamento do resgate até Anny conseguir uma negociação. Como ele deve proceder?')
+
+def bartFaseTresExecucao():
+    bartTres = input('\n\nOpção A: Aguardar Anny ter uma solução\nOpção B: Entregar a maleta vazia esperando que o filho seja libertado.\nOpção C: Entregar a maleta com o dinheiro esperando que o filho seja libertado..')
+    bartTres = str.upper(bartTres)
+    if bartTres == 'A':
+        print('Anny derrubou o criminoso e seu filho foi lebertado.')
+        print('\nParabéns.\nSeu filho voltou para casa e você chegou ao fim deste mini-game.\n\n Obrigado pela participação.')
+        return exit()
+    elif bartTres == 'B':
+        print('O criminoso descobriu que a maleta estava vazia. O filho de Bart está morto.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    else:
+        print('Você pagou o resgate e libertou seu filho. Porém, os R$ 100 mil eram emprestados do banco. De qualquer maneira você está morto.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+
