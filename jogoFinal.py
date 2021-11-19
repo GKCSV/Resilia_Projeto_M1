@@ -185,69 +185,64 @@ def chloeFaseUmApresentacao():
     print('Chloe é uma ex-agente do governo federal. Atuou por 17 anos em cargo público.')
     print('Após sua demissão inesperada por motivos políticos, ela iniciou uma trama para vingar-se de quem a prejudicou.')
     print('Seu primeiro passo foi monitorar a família de seu inimigo.')
-    print('Qual a primeira ação que Chloe deverá executar?')
+    print('Fase 1: Qual a primeira ação que Chloe deverá executar?')
     
 def chloeFaseUmExecucao():
-    chloeUm = input('Opção A: Executar um atentado contra a família.\nOpção B: Sequestrar um dos membros.\nOpção C: Derrubar o adversário por corrupção no governo.')
+    chloeUm = input('Opção A: Executar um atentado contra a família.\nOpção B: Derrubar o adversário por corrupção no governo.\nOpção C: Sequestrar um dos membros.')
     chloeUm = str.upper(chloeUm)
     if chloeUm == 'A':
-        print('A')
+        print('Você agora é um terrorista. O governo está numa busca implacável por sua cabeça.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
-    elif chloeUm == 'B':
-        print('B')
+    elif chloeUm == 'A':
+        print('Bart não possui nenhuma ligação com a ilegalidade em seu trabalho.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
     else:
-        print('C')
+        print('A melhor opção para iniciar uma negociação sem ser visto.')
         print('Você passou de fase! Vamos para a próxima')
         chloeUm = str('1')
         chloeUm = int(chloeUm)
         return chloeUm
 
 def chloeFaseDoisApresentacao():
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-    print('chloeFaseDoisApresentacao')
-
+    print('Após a ação bem sucedida, Chloe agora precisa bolar outro plano para contactar o inimigo.')
+    print('Para que não fosse descoberta, ela contratou um \"laranja"\ para efetuar a ligação.')
+    print('Após ligação e apontamento das exigências, ele pediu à vítima que aguardasse o retorno de uma nova ligação')
+    print('Fase 2: Na nova ligação, o que o sequestrador deverá solicitar?')
+  
 def chloeFaseDoisExecucao():
-    chloeDois = input('')
+    chloeDois = input('Opção A: Solicitar que a família envie um video com um apelo para soltarem o filho.\nOpção B: Solcitar que o dinheiro seja entregue em um local e filho devolvido à família em outro.\nOpção C: Pedir que a família esqueça o filho.')
     chloeDois = str.upper(chloeDois)
     if chloeDois == 'A':
-        print('RespostachloeFaseDoisApresentacao\n')
+        print('Após o recebimento do video, descobriram sua localização através do IP. Seus planos não estão dando certo.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
     elif chloeDois == 'B':
-        print('RespostachloeFaseDoisApresentacao\n')
+        print('A família aceitou a oferta\n')
         print('Você passou de fase! Vamos para a próxima')
         chloeDois = str('2')
         chloeDois = int(chloeDois)
         return chloeDois
     else:
-        print('RespostachloeFaseDoisApresentacao')
+        print('Se esquecerem o filho, você não terá sua vingança completa.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
 
 def chloeFaseTresApresentacao():
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-    print('chloeFaseTresApresentacao')
-        
+    print('Com a aceitação do trato, Chloe aguardava inquieta o recebimento do dinheiro para liberar a vítima.')
+    print('Enquanto isso, precisava deixar tudo no esquema e sair da cidade para não possuir ligações com o ato.')
+    print('Sendo assim, Chloe deixou 1 \"laranja\" para receber o dinheiro e outro com a vítima.')
+    print('O \"laranja" que estava com a vítima já tinha uma agente federal de negociações no pé, que acompanhava o caso pelo lado de fora.')
+    print('Fase 3: Qual decisão Chloe ')  
+
 def chloeFaseTresExecucao():
-    chloeTres = input('')
+    chloeTres = input('Opção A: Fugir e solicitar que o parceiro repasse o dinheiro.\nOpção B: Aguardar a chegada do dinheiro para depois fugir.\nOpção C: Se entregar e esquecer a vingança.')
     chloeTres = str.upper(chloeTres)
     if chloeTres == 'A':
-        print('RespostachloeFaseTresApresentacao')
+        print('Seu parceiro fugiu com o dinheiro.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
     elif chloeTres == 'B':
-        print('RespostachloeFaseTresApresentacao')
+        print('Havia um agente disfarçado na entrega do dinheiro. Então ele o prendeu.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
     else:
-        print('RespostachloeFaseTresApresentacao')
+        print('Agora é tarde para desistir.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
 
 
