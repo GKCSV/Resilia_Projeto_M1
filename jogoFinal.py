@@ -200,3 +200,71 @@ def bartFaseTresExecucao():
         print('Você pagou o resgate e libertou seu filho. Porém, os R$ 100 mil eram emprestados do banco. De qualquer maneira você está morto.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
 
+def chloeFaseUmApresentacao():
+    print('Chloe é uma ex-agente do governo federal. Atuou por 17 anos em cargo público.')
+    print('Após sua demissão inesperada por motivos políticos, ela iniciou uma trama para vingar-se de quem a prejudicou.')
+    print('Seu primeiro passo foi monitorar a família de seu inimigo.')
+    print('Qual a primeira ação que Chloe deverá executar?')
+    
+def chloeFaseUmExecucao():
+    chloeUm = input('Opção A: Executar um atentado contra a família.\nOpção B: Sequestrar um dos membros.\nOpção C: Derrubar o adversário por corrupção no governo.')
+    chloeUm = str.upper(chloeUm)
+    if chloeUm == 'A':
+        print('A')
+        return exit()
+    elif chloeUm == 'B':
+        print('B')
+        return exit()
+    else:
+        print('C')
+        print('Você passou de fase! Vamos para a próxima')
+        chloeUm = str('1')
+        chloeUm = int(chloeUm)
+        return chloeUm
+
+def chloeFaseDoisApresentacao():
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+    print('chloeFaseDoisApresentacao')
+
+def chloeFaseDoisExecucao():
+    chloeDois = input('')
+    chloeDois = str.upper(chloeDois)
+    if chloeDois == 'A':
+        print('RespostachloeFaseDoisApresentacao\n')
+        return exit()
+    elif chloeDois == 'B':
+        print('RespostachloeFaseDoisApresentacao\n')
+        print('Você passou de fase! Vamos para a próxima')
+        chloeDois = str('2')
+        chloeDois = int(chloeDois)
+        return chloeDois
+    else:
+        print('RespostachloeFaseDoisApresentacao')
+        return exit()
+
+def chloeFaseTresApresentacao():
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+    print('chloeFaseTresApresentacao')
+        
+def chloeFaseTresExecucao():
+    chloeTres = input('')
+    chloeTres = str.upper(chloeTres)
+    if chloeTres == 'A':
+        print('RespostachloeFaseTresApresentacao')
+        return exit()
+    elif chloeTres == 'B':
+        print('RespostachloeFaseTresApresentacao')
+        return exit()
+    else:
+        print('RespostachloeFaseTresApresentacao')
+        return exit()
