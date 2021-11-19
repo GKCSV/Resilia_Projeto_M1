@@ -53,3 +53,77 @@ def escolhaDoPersonagem():
     else:
         print('Alternativa inválida.')
         return escolhaDoPersonagem()
+
+def annyFaseUmApresentacao():
+    print('Anny é uma agente federal de negociação. Ela possui 10 anos de carreira e é a melhor desta região.')
+    print('Certo dia, Anny foi requisitada para uma operação de negociação, onde um indivíduo havia sido sequestrado. A sequestrador, em posse do indivíduo, estava solcitatando um pagamento para libertá-lo e, caso não fosse atendida sua solicitação, o mesmo mataria a vítima.')
+    print('Sendo assim, Anny preparou seus equipamentos e seguiu até Adventure\'s Park para iniciar a negociação com o sequestrador.')
+    print('Chegando ao parque, Anny seguiu para o local da negociação, onde havia várias pessoas e autoridades locais.')
+    print('Para sua surpresa, ninguém possuia qualquer prova de que o sequestrador estava de fato com a vítima.')
+    print('Sendo assim, Anny decidiu tirar a prova real.\n')
+    print('Fase 1:\n\nComo Anny deverá proceder para confirmar se a vítima existe?')
+    print('Opção A: Pedir para o sequetrador mostrar a vítima na janela\nOpção B: Pedir para o sequestrador entregar 1 (um) dedo da vítima para leitura da digital\nOpção C: Solicitar informações pessoais da vítima')
+    
+def annyFaseUmExecucao():
+    annyUm = inputLetra()
+    if annyUm == 'A':
+        print('O sequestrador negou sua solicitação.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    elif annyUm == 'B':
+        print('O sequestrador acabou enviando a cabeça da vítima.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    elif annyUm == 'C':
+        print('Ótimo. O sequestrador jogou a carteira da vítima pela janela.\n')
+        print('Você passou de fase! Vamos para a próxima')
+        annyUm = str('1')
+        annyUm = int(annyUm)
+        return annyUm
+    else:
+        return inputLetra(input('Insira apenas A, B ou C: '))
+                
+def annyFaseDoisApresentacao():
+    print('Agora Anny precisa verificar se os documentos fornecidos.')
+    print('Com uma equipe especializada de prontidão, Anny solicita a verificação da documentação.')
+    print('A equipe então inicia a verificação.')
+    print('\n\n\"Verificação concluida com sucesso\"')
+    input('Pressione Enter para continuar: ')
+    print('Com os dados verificados, Anny questiona o sequestrador sobre a possibilidade de trocar o refém por algo do seu interesse.')
+    print('O sequestrador então solicita que poderá trocá-lo por um helicóptero com piloto.\n')
+    print('\n Fase 2:\n\n Anny deverá decidir se atende ou não.\n')
+
+def annyFaseDoisExecucao():
+    annyDois = input('Opção A: Atender a solicitação\nOpção B: Negar a solicitação\nOpção C: Solicitar a um atirador de elite que abata o sequestrador')
+    annyDois = str.upper(annyDois)
+    if annyDois == 'A':
+        print('Ótimo. O sequestrador está aguardando a chegada do helicóptero.')
+        print('Você passou de fase! Vamos para a próxima')
+        annyDois = str('2')
+        annyDois = int(annyDois)
+        return annyDois
+    elif annyDois == 'B':
+        print('Como você negou a solicitação do sequestrador, ele matou a vítima.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    else:
+        print('O atirador de elite errou o alvo e acertou a vítima que veio a óbito instantaneamente.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+
+def annyFaseTresApresentacao():
+    print('Agora Anny precisa fazer com que a vítima fique viva.')
+    print('Sendo assim, ela avisa ao sequestrador que o helicóptero chegará em 10 minutos.')
+    print('Anny então deverá tomar a decisão final do caso.')
+    print('\n Fase 2:\n\n Anny deverá finalizar este caso O que ela poderá fazer?.\n')
+
+def annyFaseTresExecucao():
+    annyTres = input('Opção A: Aguardar a chegada do helicóptero para a troca pela vítima\nOpção B: Tentar outra solução\nOpção C: Prender o sequestrador no momento da libertação do refém')
+    annyTres = str.upper(annyTres)
+    if annyTres == 'A':
+        print('O sequestrador libertou o refém, mas fugiu.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    elif annyTres == 'B':
+        print('O sequestrador não quis outra solução e matou a vítima.\n\nGAME OVER\n\nMais sorte na próxima.')
+        return exit()
+    else:
+        print('O refém foi liberado e o sequestrador foi preso.')
+        print('Mais um caso solucionado pela melhor agente!')
+        print('\nParabéns.\nVocê conseguiu libertar o refém e chegou ao fim deste mini-game.\n\n Obrigado pela participação.')
+        return exit()
