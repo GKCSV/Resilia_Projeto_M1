@@ -292,3 +292,38 @@ chloe = 0
 chloeUm = 0
 chloeDois = 0
 chloeTres = 0
+
+
+#   INÍCIO:
+start = str.upper(input('WELCOME TO ADVETURE\'S PARK\n\n\nPressione Enter para continuar\n'))
+
+if  start == str(''):
+    inputMenu()
+    escolhaDoPersonagem()    
+    if escolhaPersonagem == str.upper('A'):
+        annyFaseUmApresentacao()
+        annyFaseUmExecucao()
+        if annyUm == int(1):
+            annyFaseDoisApresentacao
+            annyFaseDoisExecucao
+            if annyDois == int(2):
+                annyFaseTresApresentacao()
+                annyFaseTresExecucao()
+    elif escolhaPersonagem == 'B':
+        bartFaseUmApresentacao()
+        bartFaseUmExecucao()
+        if bartUm == int(1):
+            bartFaseDoisApresentacao()
+            bartFaseDoisExecucao()
+            if bartDois == int(2):
+                bartFaseTresApresentacao()
+                bartFaseTresExecucao()
+    elif escolhaPersonagem == 'C':
+        chloeFaseUmApresentacao()
+        chloeFaseUmExecucao()
+        if chloeUm == int(1):
+            chloeFaseDoisApresentacao()
+            chloeFaseDoisExecucao()
+            if chloeDois == int(2):
+                chloeFaseTresApresentacao()
+                chloeFaseTresExecucao()
