@@ -35,24 +35,7 @@ def inputMenu():
         exit()
     else:
         print('Alternativa inválida.')
-        return inputMenu('Insira apenas Sim (S) ou Não (N): ')
-
-def escolhaDoPersonagem():
-    print('Agora escolha o personagem com o qual jogará:\n\n (A)  Anny\n (B)  Bart\n (C)  Chloe\n')
-    escolhaPersonagem = input('Insira A, B ou C como opção:   ')
-    escolhaPersonagem = str.upper(escolhaPersonagem)
-    if escolhaPersonagem == str('A'):
-        print('Legal. Você estará na pele de Anny, nossa agente de negociações.')
-        return escolhaPersonagem
-    elif escolhaPersonagem == str('B'):
-        print('Legal. Você estará na pele de Bart, pai da vítima sequestrada.')
-        return escolhaPersonagem
-    elif escolhaPersonagem == str('C'):
-        print('Legal. Você estará na pele de Chloe, a sequestradora.')
-        return escolhaPersonagem
-    else:
-        print('Alternativa inválida.')
-        return escolhaDoPersonagem()
+        return inputMenu()
 
 def annyFaseUmApresentacao():
     print('Anny é uma agente federal de negociação. Ela possui 10 anos de carreira e é a melhor desta região.')
@@ -75,9 +58,8 @@ def annyFaseUmExecucao():
     elif annyUm == 'C':
         print('Ótimo. O sequestrador jogou a carteira da vítima pela janela.\n')
         print('Você passou de fase! Vamos para a próxima')
-        annyUm = str('1')
-        annyUm = int(annyUm)
-        return annyUm
+        annyI = int(1)
+        return annyI
     else:
         return inputLetra(input('Insira apenas A, B ou C: '))
                 
@@ -97,9 +79,8 @@ def annyFaseDoisExecucao():
     if annyDois == 'A':
         print('Ótimo. O sequestrador está aguardando a chegada do helicóptero.')
         print('Você passou de fase! Vamos para a próxima')
-        annyDois = str('2')
-        annyDois = int(annyDois)
-        return annyDois
+        annyII = int(2)
+        return annyII
     elif annyDois == 'B':
         print('Como você negou a solicitação do sequestrador, ele matou a vítima.\n\nGAME OVER\n\nMais sorte na próxima.')
         return exit()
@@ -270,60 +251,65 @@ def chloeFaseTresExecucao():
         return exit()
 
 
-
-########   Execução:    ########
-
-
 #   VARIÁVEIS:
 
 start = ''
 escolhaABC = ''
 escolhaMenu = ''
 escolhaPersonagem = ''
-anny = int()
+anny = str.upper('')
 annyUm = int()
 annyDois = int()
 annyTres = int()
-bart = int()
+bart = str.upper('')
 bartUm = int()
 bartDois = int()
 bartTres = int()
-chloe = int()
+chloe = str.upper('C')
 chloeUm = int()
 chloeDois = int()
 chloeTres = int()
 
+
+
+########   Execução:    ########
 
 #   INÍCIO:
 start = str.upper(input('WELCOME TO ADVETURE\'S PARK\n\n\nPressione Enter para continuar\n'))
 
 if  start == str(''):
     inputMenu()
-    escolhaDoPersonagem()    
-    if escolhaPersonagem == str.upper('A'):
+    print('Agora escolha o personagem com o qual jogará:\n\n (A)  Anny\n (B)  Bart\n (C)  Chloe\n')
+    escolhaPersonagem = input('Insira A, B ou C como opção:   ')
+    escolhaPersonagem = str.upper(escolhaPersonagem)
+    if escolhaPersonagem == str('A'):
+        print('Legal. Você estará na pele de Anny, nossa agente de negociações.')
         annyFaseUmApresentacao()
         annyFaseUmExecucao()
-        if annyUm == int(1):
-            annyFaseDoisApresentacao
-            annyFaseDoisExecucao
-            if annyDois == int(2):
-                annyFaseTresApresentacao()
-                annyFaseTresExecucao()
-    elif escolhaPersonagem == 'B':
+        annyFaseDoisApresentacao()
+        annyFaseDoisExecucao()
+        annyFaseTresApresentacao()
+        annyFaseTresExecucao()
+    elif escolhaPersonagem == str('B'):
+        print('Legal. Você estará na pele de Bart, pai da vítima sequestrada.')
         bartFaseUmApresentacao()
         bartFaseUmExecucao()
-        if bartUm == int(1):
-            bartFaseDoisApresentacao()
-            bartFaseDoisExecucao()
-            if bartDois == int(2):
-                bartFaseTresApresentacao()
-                bartFaseTresExecucao()
-    elif escolhaPersonagem == 'C':
+        bartFaseDoisApresentacao()
+        bartFaseDoisExecucao()
+        bartFaseTresApresentacao()
+        bartFaseTresExecucao()
+    elif escolhaPersonagem == str('C'):
+        print('Legal. Você estará na pele de Chloe, a sequestradora.')
         chloeFaseUmApresentacao()
         chloeFaseUmExecucao()
-        if chloeUm == int(1):
-            chloeFaseDoisApresentacao()
-            chloeFaseDoisExecucao()
-            if chloeDois == int(2):
-                chloeFaseTresApresentacao()
-                chloeFaseTresExecucao()
+        chloeFaseDoisApresentacao()
+        chloeFaseDoisExecucao()
+        chloeFaseTresApresentacao()
+        chloeFaseTresExecucao()
+else:
+    start = input('Alternativa inválida. Escolha \'S\' ou \'N\':  ')
+        
+    
+        
+
+        
